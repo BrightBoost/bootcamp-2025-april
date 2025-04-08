@@ -179,7 +179,7 @@ Copy the **first commit hash** (the long code from the log). Then type:
 git checkout <paste-commit-hash-here>
 ```
 
-Look at `index.html` again… the new line is gone. You’ve gone back in time. 🌀
+Look at `index.html` again… (possibly refresh the page) the new line is gone. You’ve gone back in time. 🌀
 
 ---
 
