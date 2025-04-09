@@ -5,4 +5,4 @@ Things we did today:
 - Data types in Java
 
 Things I hope to do tomorrow:
-- Operators
+- Operators and expressions
