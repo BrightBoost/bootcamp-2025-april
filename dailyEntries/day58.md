@@ -1,0 +1,5 @@
+Things we did today:
+- Git push and pull
+- Creating projects in IntelliJ
+- Intro what is Java
+- Data types in Java
