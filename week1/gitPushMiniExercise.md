@@ -15,3 +15,5 @@ Go ahead and add and commit these changes.
 Now it's time to get it to the remote. You can do this with the command `git push`.
 
 If this is your first time pushing, go ahead and authenticate/authorize via the browser.
+
+Refresh the github workbook 1 and your changes should be there!
