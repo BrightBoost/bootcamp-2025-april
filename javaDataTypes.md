@@ -18,3 +18,17 @@ System.out.println("the nr is " + x);
 ```
 
 7. Run the file with the play icon that's near the line numbers
+
+
+---
+
+## BONUS
+
+Can you use Java to answer the following?        
+```java
+// What is 7 + 3? → 10
+// What is 10 - 4? → 6
+// What is 2 * 5? → 10
+// What is 20 / 4? → 5
+// What is 10 % 3? → 1
+```
