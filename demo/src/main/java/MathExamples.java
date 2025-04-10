@@ -7,6 +7,6 @@ public class MathExamples {
 
         double biggest = Math.max(3.0, 45);
         System.out.println(biggest);
-        
+
     }
 }
