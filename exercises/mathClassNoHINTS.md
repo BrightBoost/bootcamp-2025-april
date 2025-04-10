@@ -127,11 +127,8 @@ Tasks:
 ```
 Rounded price: 10.88
 ```
-<details>
-<summary>hints</summary>
 
 > *Hint*: Multiply by 100, round, divide by 100.
-</details>
 
 ---
 

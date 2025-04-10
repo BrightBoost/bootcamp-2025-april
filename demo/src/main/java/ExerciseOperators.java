@@ -111,5 +111,6 @@ public class ExerciseOperators {
         double electricityCost = 2.75;
         double totalElectricityCost = electricityCost * fullHours;
         System.out.printf("Cost for %d hour(s) = %.2f euros", fullHours, totalElectricityCost);
+
     }
 }
