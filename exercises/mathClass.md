@@ -128,7 +128,7 @@ Tasks:
 Rounded price: 10.88
 ```
 <details>
-<summary>hints</summary>
+<summary>Hints</summary>
 
 > *Hint*: Multiply by 100, round, divide by 100.
 </details>
@@ -166,7 +166,11 @@ Example:
 Task:
 - Calculate and print the rounded price.
 
-> *Hint*: Multiply by 20, floor, divide by 20.
+<details>
+<summary>Hints</summary>
+
+> *Hint*: Multiply by 20, floor, divide by 20.</details>
+
 
 ---
 
@@ -203,7 +207,11 @@ Task:
 - Print the biggest one without using if or loops.  
 - Print the smallest one.
 
+<details>
+<summary>Hints</summary>
+
 > *Hint*: Nest Math.max() and Math.min()
+</details>
 
 ---
 
@@ -224,7 +232,11 @@ Example:
 Pay: 18 euros
 ```
 
-> *Hint*: ceil → cast to int.
+<details>
+<summary>Hints</summary>
+
+> *Hint*: ceil → cast to int.</details>
+
 
 ---
 
@@ -258,6 +270,11 @@ Task:
 Absolute distance = 20
 ```
 
+<details>
+<summary>Hints</summary>
+
 > *Hint*: abs → ceil → cast.
+</details>
+
 
 ---
