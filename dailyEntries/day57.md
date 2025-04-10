@@ -1,5 +1,22 @@
 - operators
-- expressions
-- scope
+    - string (only concat with +)
+    - math operators + - / * %
+    - == (equals) and != (not equals)
+    - < > <= >= comparison operators
+    - assignment operators (+=)
+    - pre/post unioperators ++ and --
 - casting
+    - (int) and (float) etc
+    - change the type of a value
+    - necessary for narrowing (not for widening) << pasta containers examples
+- math class
+    - max and min
+    - ceil and floor
+    - round
+    - abs
+    - random
+- expressions: everything Java evaluates into a value is an expression
+
+Tomorrow:
 - scanner
+- scope
