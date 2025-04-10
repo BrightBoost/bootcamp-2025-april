@@ -19,7 +19,6 @@ public class App {
         // objects - type should always start with uppercase
         String name = "Paulo";
 
-
         // auto detection / var
 
 
