@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class PayrollCalculator {
+
     public static void main(String[] args) {
         // create a scanner object
         Scanner scanner = new Scanner(System.in);
@@ -15,11 +16,19 @@ public class PayrollCalculator {
 
         // pay rate
         System.out.println("Please enter pay rate: ");
-        double payRate = scanner.nextDouble();
+        final double payRate = scanner.nextDouble();
 
-        // calc gross pay
-        double grossPay = hrsWorked * payRate;
-
+        // calc gross pay include overtime for 1.5x pay
+        double grossPay = 0;
+        // check for overtime
+        if (hrsWorked > 40) {
+            // if there's overtime >> those hours have a special rate
+            grossPay += (hrsWorked - 40) * payRate * 1.5;
+            grossPay += 40 * payRate;
+        } else {
+            // everything under 40 hours is normal rate
+            grossPay += hrsWorked * payRate;
+        }
         // display name + pay
         System.out.println(name + " has " + grossPay + " as a salary.");
     }
