@@ -63,7 +63,7 @@ public class ExerciseMathClass {
         double price1 = 3.64;
         System.out.println("No pennies >:D: " + Math.round(price1 * 20) / 20.0);
         System.out.println("No pennies >:D: " + (float)(Math.round(price1 / 0.05) * 0.05));
-        
+
         // 4
         double xx = 5.9;
         int yy = (int)xx + 3;
