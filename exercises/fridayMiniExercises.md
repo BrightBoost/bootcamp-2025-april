@@ -124,3 +124,101 @@ Welcome, [name] the [class]!
 Your Power Score is: [power]
 ```
 
+## Bonus Challenges – Loops & Switch Edition (Levels 21-30)
+
+Please mind, we did not talk about loops yet. This is just to keep people who go really fast occupied. 
+
+---
+
+## 21. Dice Roll Until 6  
+Keep rolling a dice (1-6) until you roll a 6. Print every roll.
+
+---
+
+## 22. Monster HP Battle  
+Ask for monster HP. Every attack deals 10 damage. Use a loop to "attack" until HP is 0. Print attack count.
+
+Example output:
+```
+You attacked! Monster HP is now 50
+...
+You attacked! Monster defeated after 7 hits!
+```
+
+---
+
+## 23. Guess the Number (Retry Until Correct)  
+Secret number = random between 1-10. Ask the player to guess. Keep asking until correct.
+
+---
+
+## 24. Rock Paper Scissors — Best of 3  
+Loop until either player or computer has 2 wins.
+
+---
+
+## 25. Menu System (switch)  
+Print:
+```
+1. Start Game  
+2. View Stats  
+3. Exit  
+```
+Let the player choose. Use switch to handle the options.
+
+---
+
+## 26. Potion Inventory  
+Ask how many potions the player has. Loop from 1 to that number and print:
+```
+Potion #1 ready  
+Potion #2 ready  
+...
+```
+
+---
+
+## 27. Basic Shop Loop  
+Keep showing this menu until player types "exit":
+```
+Welcome to the Shop!
+1. Sword - 100 gold
+2. Shield - 75 gold
+3. Potion - 15 gold
+Type 'exit' to leave.
+```
+
+---
+
+## 28. Attack Menu (switch)  
+Ask for player choice:
+```
+Choose your attack:
+1. Punch
+2. Kick
+3. Fireball
+```
+Use switch to print different damage outputs.
+
+---
+
+## 29. Monster Wave Battle  
+Monsters are attacking in waves (let's say 5). Loop through each wave:
+```
+Wave 1 cleared!
+Wave 2 cleared!
+...
+```
+
+---
+
+## 30. Lucky Number Game  
+Let the player pick a number between 1-10. Roll a random number 10 times. Count how many times their number appeared.
+
+Example output:
+```
+Your number appeared 3 times!
+```
+
+---
+
