@@ -9,8 +9,9 @@ public class MoreMethodsFirst {
     }
 
     public static double add(double x, double y) {
-
-        return x + y;
+        double result = x + y;
+        result++;
+        return result;
     }
 
     public static void addPrint(double x, double y) {
