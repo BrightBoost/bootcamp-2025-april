@@ -1,3 +1,5 @@
+package week1;
+
 public class ExerciseOperators {
     public static void main(String[] args) {
         // 1.  Create 3 variables: an int, a double, and a char. Print them.
@@ -101,7 +103,7 @@ public class ExerciseOperators {
         double area = Math.PI * radius * radius;
         System.out.println(area);
 
-        // Mini Challenge: Time Calculator (Operators & Casting Only)
+        // Mini Challenge: Time Calculator (week1.Operators & Casting Only)
 
         int totalMinutes = 350;
         int fullHours = 350 / 60;

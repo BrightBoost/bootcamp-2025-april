@@ -1,3 +1,5 @@
+package week1;
+
 public class IfElseExplained {
     public static void main(String[] args) {
 //        if x == 5:

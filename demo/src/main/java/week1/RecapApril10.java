@@ -1,3 +1,5 @@
+package week1;
+
 public class RecapApril10 {
     public static void main(String[] args) {
         // Literal value types

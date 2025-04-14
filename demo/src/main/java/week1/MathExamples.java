@@ -1,3 +1,5 @@
+package week1;
+
 public class MathExamples {
     public static void main(String[] args) {
         int score1 = -6;
