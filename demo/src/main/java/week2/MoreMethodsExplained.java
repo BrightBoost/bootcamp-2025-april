@@ -11,11 +11,11 @@ public class MoreMethodsExplained {
         String username = getNameUser(scanner);
         System.out.println(nr + " " + username);
 
-        sillyDemo(scanner);
+        sillyDemo(scanner, 7);
         scanner.close();
     }
 
-    public static void sillyDemo(Scanner scanner) {
+    public static void sillyDemo(Scanner scanner, int y) {
         int x =  scanner.nextInt();
         scanner.nextLine();
         String s = scanner.nextLine();
