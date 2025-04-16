@@ -1,6 +1,8 @@
 Today:
 - Code financial calculator with Maaike
-- More on strings
+- More on strings (methods, splitting, parsing)
 - Exercises
-- Code reviews
+
+Tomorrow:
+- More on strings (stringbuilder)
 - Loops and arrays

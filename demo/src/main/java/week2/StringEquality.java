@@ -31,7 +31,19 @@ public class StringEquality {
         String[] cities = input.split("\\|");
         System.out.println(cities[0]);
 // cities is an array containing 3 strings
+
 // [0] is Dallas, [1] is Ft. Worth, [2] is Auston
 
+        String fruit1 = "Apple";
+        String fruit2 = "Banana";
+        System.out.println(fruit1.compareTo(fruit2));
+
+        String noVowels =  fruit2.replaceAll("a", "");
+        noVowels =  noVowels.replaceAll("e", "");
+        noVowels =  noVowels.replaceAll("i", "");
+        noVowels =  noVowels.replaceAll("o", "");
+        noVowels =  noVowels.replaceAll("u", "");
+
+        System.out.println(fruit2.length() - noVowels.length());
     }
 }
