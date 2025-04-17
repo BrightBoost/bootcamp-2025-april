@@ -1,0 +1,24 @@
+- Git & Github
+    - init, add, commit, push, pull
+- Java
+    - Java overview
+    - JVM, JRE and JDK
+    - Compiling Java
+    - Variables
+    - Data types: primitives and String
+    - Casting primitives
+    - Operators
+        - Mathematical
+        - Comparison
+        - Increment and decrement unary operators
+        - Assignment operators
+    - Math class
+    - Scanner
+    - Static methods
+    - If else statements
+    - String comparison
+    - String methods
+    - Converting / parsing strings
+    - LocalDate
+
+
