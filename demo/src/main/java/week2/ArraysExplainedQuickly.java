@@ -67,6 +67,14 @@ public class ArraysExplainedQuickly {
 
         boolean[] arrBooleans = {true, false, true, false, true};
 
+        for(int i = 0; i < charArr.length; i++) {
+            if(charArr[i] == 'o') {
+                continue;
+            }
+            System.out.println(charArr[i]);
+
+        }
+
 
 
     }
