@@ -1,4 +1,4 @@
-package week2.oop;
+package week2.oop1;
 
 public class Chair {
     static String latinNameForChair = "sella";
