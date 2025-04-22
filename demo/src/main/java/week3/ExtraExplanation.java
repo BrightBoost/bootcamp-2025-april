@@ -29,21 +29,23 @@ public class ExtraExplanation {
 
     public static void readFile() {
         // try with resources to create the reader
-        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("data/text.txt"))) {
+        try(BufferedReader bufferedReader = new BufferedReader(new FileReader("data/input.txt"))) {
             //  reading is happening
             // we want to read all the lines, so we loop
             String line;
+            int count = 0;
             // when we reach the end of the file, readline will give us null
             while((line = bufferedReader.readLine()) != null) {
-                if(line.contains("m")) {
+                if(line.contains("error")) {
                     System.out.println(line);
                 } else {
-                    System.out.println("This line has no m");
+                    System.out.println(count + ": This line has no error");
                 }
+                count++;
             }
             // dont need to close the reader because of the try with resources
         } catch(IOException e) {
-            System.out.println(e.getMessage());
+            System.out.println("Oh no: " + e.getMessage());
         }
     }
 }

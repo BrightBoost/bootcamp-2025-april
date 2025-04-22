@@ -1,7 +1,7 @@
 i can write some text here
 and some more
 blablabla
-end of file here
+end of file here error
 
 
 
