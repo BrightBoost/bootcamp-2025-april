@@ -84,26 +84,7 @@ public class FileExercises {
         }
     }
 
-    // 6. Read lines into an array and print in uppercase
-    public static void readLinesToUppercase() {
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader("user_input.txt"));
-            List<String> lines = new ArrayList<>();
-            String line;
-            while ((line = reader.readLine()) != null) {
-                lines.add(line);
-            }
-            reader.close();
-
-            for (int i = 0; i < lines.size(); i++) {
-                System.out.println(lines.get(i).toUpperCase());
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // 7. Count how many times a word appears
+    // 6. Count how many times a word appears
     public static void countWordOccurrences() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter a word to search: ");
@@ -125,7 +106,7 @@ public class FileExercises {
         }
     }
 
-    // Book class for exercises 8-10
+    // Book class for exercises after this
     static class Book {
         String title;
         String author;
@@ -140,7 +121,7 @@ public class FileExercises {
         }
     }
 
-    // 8. Save array of Book objects to file
+    // 7. Save array of Book objects to file
     public static void saveBooksToFile() {
         Book[] books = {
             new Book("Clean Code", "Robert C. Martin"),
@@ -159,7 +140,7 @@ public class FileExercises {
         }
     }
 
-    // 9. Read file and create Book objects
+    // 8. Read file and create Book objects
     public static void loadBooksFromFile() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("books.txt"));
@@ -181,7 +162,7 @@ public class FileExercises {
         }
     }
 
-    // 10. Append a user-created Book to the file
+    // 9. Append a user-created Book to the file
     public static void appendBookFromInput() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter book title: ");
