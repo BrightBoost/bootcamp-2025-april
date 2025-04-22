@@ -1,8 +1,5 @@
 ## 📄 **FileReader & FileWriter Exercises – Java**
 
-> ⚠️ Tip for your students: Always use `try-catch` or `throws IOException` for file operations.
-
----
 
 ### 🟢 **Level 1: Writing and Reading Basics**
 
@@ -50,14 +47,7 @@ Write each line to a file.
 
 ---
 
-### ✅ **6. Read lines into an array**
-Read all lines from a file and store them in a new `String[]`.  
-Then print each line in uppercase.
-
-
----
-
-### ✅ **7. Count how many times a word appears**
+### ✅ **6. Count how many times a word appears**
 Ask the user for a word, then read a file and count how often that word appears.
 
 🧠 *Focus: Looping through lines, using `.contains()`*
@@ -68,7 +58,7 @@ Ask the user for a word, then read a file and count how often that word appears.
 
 ---
 
-### ✅ **8. Save an array of `Book` objects to file**
+### ✅ **7. Save an array of `Book` objects to file**
 Create a `Book` class with fields: `title`, `author`.  
 Create 3 `Book` objects in an array.  
 Write each book as a line in the file like:
@@ -83,15 +73,26 @@ Head First Java;Kathy Sierra
 
 ---
 
-### ✅ **9. Read a file and build an array of `Book` objects**
+### ✅ **8. BONUS: Read a file and build an array of `Book` objects**
 Read a file with book data (like the one above),  
 Split each line by `;` and create a `Book` object for each.
+
+```
+The Hobbit|J.R.R. Tolkien
+1984|George Orwell
+Pride and Prejudice|Jane Austen
+To Kill a Mockingbird|Harper Lee
+The Catcher in the Rye|J.D. Salinger
+The Great Gatsby|F. Scott Fitzgerald
+Moby-Dick|Herman Melville
+War and Peace|Leo Tolstoy
+```
 
 🧠 *Focus: `String.split()`, object creation, storing in array/list*
 
 ---
 
-### ✅ **10. Bonus: Let the user add a book to a file**
+### ✅ **9. Bonus: Let the user add a book to a file**
 Ask the user for a book title and author using `Scanner`,  
 Create a new `Book` and add it to the file without erasing the old data (append mode).
 

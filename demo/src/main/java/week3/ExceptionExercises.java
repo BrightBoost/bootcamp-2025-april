@@ -7,6 +7,7 @@ public class ExceptionExercises {
     static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         addThreeNumbers();
+        scanner.close();
 
     }
 
