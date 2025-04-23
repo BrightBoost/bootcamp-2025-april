@@ -62,10 +62,6 @@ Make a simple program that shows a random quote every time the user presses Ente
 
 ---
 
-Absolutely! Here's the upgraded **Random Quote Generator 2.0** assignment — still beginner-friendly, but now including **file reading/writing**, **dynamic storage**, and **menu options** for different actions.
-
----
-
 ## 🧠 **Assignment 4: Random Quote Generator with File Support**
 
 ### 📋 **Objective**  
