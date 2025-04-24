@@ -21,4 +21,8 @@ public class Product {
     public float getPrice() {
         return this.price;
     }
+
+    public String toFileString() {
+        return id + "|" + name + "|" + price;
+    }
 }

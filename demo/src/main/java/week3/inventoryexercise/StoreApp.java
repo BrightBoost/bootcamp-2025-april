@@ -2,6 +2,7 @@ package week3.inventoryexercise;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,6 @@ public class StoreApp {
 
     public static void main(String[] args) {
         displayMenu();
-
     }
 
     public static void displayMenu() {
@@ -46,7 +46,8 @@ What do you want to do?
                     displayListProducts(products);
                     break;
                 case 4:
-                    addNewProduct(null);
+                    Product newProduct = promptForNewProduct();
+                    addNewProduct("data/inventory.csv", newProduct);
                     break;
                 case 5:
                     System.out.println("Ok bye.");
@@ -103,8 +104,22 @@ What do you want to do?
         return matchingProducts;
     }
 
-    public static void addNewProduct(Product p){
+    public static Product promptForNewProduct() {
+        System.out.println("What id does your new product have?");
+        int id = Integer.parseInt(scanner.nextLine());
+        System.out.println("What name does your new product have?");
+        String name = scanner.nextLine();
+        System.out.println("What price does your new product have?");
+        float price = Float.parseFloat(scanner.nextLine());
+        return new Product(id, name, price);
+    }
 
+    public static void addNewProduct(String filename, Product p){
+        try(FileWriter fw = new FileWriter(filename, true)) {
+            fw.write(p.toFileString() + "\n");
+        } catch (IOException e) {
+            System.out.println("Oh noooo: " + e.getMessage());
+        }
     }
 
     public static List<Product> getInventory() {
