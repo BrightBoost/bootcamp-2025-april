@@ -16,7 +16,7 @@ public class DateExercises {
         String date = "2025-04-01T09:30";
         LocalDateTime ldt = LocalDateTime.parse(date);
         System.out.println(ldt);
-        
+
 
         // 15 extra difficult
         String date1 = "09:30 2025-04-01";
