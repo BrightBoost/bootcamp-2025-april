@@ -38,7 +38,12 @@ What do you want to do?
                     displaySingleProduct(p);
                     break;
                 case 3:
-                    findProductByPriceRange(2.0, 7);
+                    System.out.println("What start price?");
+                    double start = Double.parseDouble((scanner.nextLine()));
+                    System.out.println("What end price?");
+                    double end = Double.parseDouble((scanner.nextLine()));
+                    List<Product> products = findProductByPriceRange(start, end);
+                    displayListProducts(products);
                     break;
                 case 4:
                     addNewProduct(null);
@@ -69,6 +74,14 @@ What do you want to do?
                 p.getId(), p.getName(), p.getPrice());
     }
 
+    public static void displayListProducts(List<Product> products){
+        for (int i = 0; i < products.size(); i++) {
+            Product p = products.get(i);
+            System.out.printf("id: %d - %s - Price: $%.2f%n",
+                    p.getId(), p.getName(), p.getPrice());
+        }
+    }
+
     public static Product findProductById(int id) {
         List<Product> inventory = getInventoryFromFile("data/inventory.csv");
         for (int i = 0; i < inventory.size(); i++) {
@@ -79,8 +92,15 @@ What do you want to do?
         return null;
     }
 
-    public static Product findProductByPriceRange(double start, double end) {
-        return null;
+    public static List<Product> findProductByPriceRange(double start, double end) {
+        List<Product> inventory = getInventoryFromFile("data/inventory.csv");
+        List<Product> matchingProducts = new ArrayList<>();
+        for (int i = 0; i < inventory.size(); i++) {
+            if(inventory.get(i).getPrice() > start && inventory.get(i).getPrice() < end) {
+                matchingProducts.add(inventory.get(i));
+            }
+        }
+        return matchingProducts;
     }
 
     public static void addNewProduct(Product p){
