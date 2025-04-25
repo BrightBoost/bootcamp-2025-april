@@ -65,7 +65,7 @@ Some people have more than one pet.
 4. Retrieve and print all pet names for a specific person.
 5. Add a new pet to one person’s list.
 6. Remove a pet from someone’s list.
-7. Loop over the map and print each person’s name and all their pets' names and types.
+7. Loop over the map and print each person’s name and all their pets' names and types. (You'll need a loop in a loop)
 
 ---
 
