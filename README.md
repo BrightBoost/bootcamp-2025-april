@@ -19,7 +19,7 @@ Welcome to the **Markdown Feature Showcase**! This document demonstrates all com
 - [Footnotes](#footnotes)
 
 ---
-## 🔠 Headers
+## Headers
 
 ```markdown
 # H1
