@@ -31,7 +31,7 @@ Welcome to the **Markdown Feature Showcase**! This document demonstrates all com
 ```
 
 ---
-## ✍️ Text Formatting
+## Text Formatting
 
 - **Bold** → `**Bold**`
 - *Italic* → `*Italic*`
@@ -41,7 +41,7 @@ Welcome to the **Markdown Feature Showcase**! This document demonstrates all com
 
 ---
 
-## 📚 Lists
+## Lists
 
 ### Unordered
 
@@ -59,7 +59,7 @@ Welcome to the **Markdown Feature Showcase**! This document demonstrates all com
 
 ---
 
-## 🧪 Code Examples
+## Code Examples
 
 ### Inline Code
 
@@ -89,7 +89,7 @@ function greet(name) {
 
 ---
 
-## 📊 Tables
+## Tables
 
 | Feature       | Supported | Notes                |
 |---------------|-----------|----------------------|
@@ -100,7 +100,7 @@ function greet(name) {
 
 ---
 
-## 🔗 Links and Anchors
+## Links and Anchors
 
 ### External Link
 
@@ -116,7 +116,7 @@ Jump to [Tables](#tables)
 
 ---
 
-## 🖼️ Images
+## Images
 
 ```markdown
 ![Cat](images/kitten1.jpeg)
@@ -126,7 +126,7 @@ Jump to [Tables](#tables)
 
 ---
 
-## 💬 Blockquotes
+## Blockquotes
 
 > This is a blockquote.
 > 
@@ -134,7 +134,7 @@ Jump to [Tables](#tables)
 
 ---
 
-## ✅ Task Lists
+## Task Lists
 
 - [x] Write README
 - [x] Push to GitHub
@@ -143,7 +143,7 @@ Jump to [Tables](#tables)
 
 ---
 
-## 📦 Collapsible Sections
+## Collapsible Sections
 
 <details>
   <summary>Click to expand section</summary>
@@ -161,7 +161,7 @@ Jump to [Tables](#tables)
 
 ---
 
-## 📝 Footnotes
+## Footnotes
 
 This sentence has a footnote.[^1]
 
