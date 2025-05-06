@@ -84,7 +84,7 @@ public class Employee {
         double time = LocalDateTime.now().getHour();
 
         double minutes = LocalDateTime.now().getMinute();
-        time += minutes / 0.6;
+        time += minutes / 60;
         double hoursWorkedToday = time - startTime;
         hoursWorked += hoursWorkedToday;
     }
