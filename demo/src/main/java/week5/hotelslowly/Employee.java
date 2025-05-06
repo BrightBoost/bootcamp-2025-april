@@ -97,7 +97,7 @@ public class Employee {
 
     public void punchOut() {
         int hours = LocalDateTime.now().getHour();
-        int minutes = LocalDateTime.now().getMinute() * 1/60;
+        double minutes = LocalDateTime.now().getMinute()/60.0;
         double endTime = hours + minutes;
         hoursWorked += endTime - startTime;
     }
