@@ -1,0 +1,7 @@
+- Recap OOP
+- classes
+- encapsulation > getters, setters, derived getters
+- methods
+- constructors
+- overloading >> brain overload
+- work on the hotel project
