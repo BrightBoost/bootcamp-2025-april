@@ -50,8 +50,10 @@ public class Room {
     }
 
     public void checkIn(){
-        setDirty(true);
-        setOccupied(true);
+        if(isAvailable()) {
+            setDirty(true);
+            setOccupied(true);
+        }
     }
 
     public void checkOut(){
