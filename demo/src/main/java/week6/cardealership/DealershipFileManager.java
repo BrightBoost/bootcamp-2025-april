@@ -7,7 +7,7 @@ import java.io.IOException;
 
 public class DealershipFileManager {
 
-    private static String fileLocation = "src/main/resources/inventory.csv";
+    public static String fileLocation = "src/main/resources/inventory.csv";
 
     public static Dealership getDealerShip() {
         Dealership dealership = null;
