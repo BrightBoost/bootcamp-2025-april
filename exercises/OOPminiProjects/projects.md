@@ -1,4 +1,34 @@
-### 🍽️ Mini Project 1: *Restaurant Order System*
+### 💰 Mini Project 1: *Bank Account Manager*
+
+**Banking made... well, fun!**
+Design a simple system that manages different types of bank accounts. Time to cash in your inheritance knowledge!
+
+#### **Project Goal:**
+
+Create a system that handles different types of bank accounts and performs basic operations.
+
+#### **Requirements:**
+
+* Create a base class called `BankAccount` with fields like `accountHolder`, `balance`, and methods like `deposit(amount)` and `withdraw(amount)`.
+* Create at least **two subclasses**:
+
+  * `SavingsAccount`: earns interest
+  * `CheckingAccount`: includes transaction fees
+* Each subclass should override the `withdraw()` method appropriately (e.g., charge a fee, or limit withdrawals).
+* Use constructors to set up accounts and call the superclass constructor.
+* In `main()`, create a **`List<BankAccount>`**, add a few accounts, and perform some deposits and withdrawals on each.
+* Use polymorphism to call `deposit()` and `withdraw()` on the list items.
+
+#### **Bonus:**
+
+Add a method to apply interest to `SavingsAccount` and a method to print an account summary for each account.
+
+🎯 *A classic example of OOP in action! This project brings all the key concepts together with a real-world theme.*
+
+---
+
+
+### 🍽️ Mini Project 2: *Restaurant Order System*
 
 **Hey code chef!**
 Get ready to cook up some classes and serve up some polymorphism. In this project, you're building a basic system to manage different types of menu items at a restaurant—and now you're also going to build an **order system** that calculates totals!
@@ -56,7 +86,7 @@ Add a `vegetarian` boolean field to `MainDish`, and show only vegetarian items w
 
 ---
 
-### 🎩🎸 Mini Project 2: *Wilmer's Wonder Shop – Magic Meets Music!*
+### 🎩🎸 Mini Project 3: *Wilmer's Wonder Shop – Magic Meets Music!*
 
 **Welcome to Wilmer’s Wonder Emporium**, where enchanted wands sit beside vintage guitars, and top hats share shelves with drum kits. Your job is to build a system that manages all these magical and musical items—and gives them life through a magician and a musician!
 
@@ -68,11 +98,11 @@ Create a system that tracks **both magic items and musical instruments**, and le
 
 ### 🧱 Step 1: Build the Item Hierarchy
 
-1. Create an **abstract base class** called `Item` with:
+1. Create a **base class** called `Item` with:
 
    * `name` (String)
    * `price` (double)
-   * An abstract method `use()`.
+   * A method `use()`.
 
 2. Create two subclasses of `Item`:
 
@@ -136,37 +166,7 @@ In your `main()` method:
 
 ---
 
-🎯 *This project invites you to have fun with your imagination and practice powerful OOP concepts like inheritance, polymorphism, and abstract classes. You’re not just writing code—you’re creating an enchanted universe that rocks!* 💥
-
----
-
-
-### 💰 Mini Project 3: *Bank Account Manager*
-
-**Banking made... well, fun!**
-Design a simple system that manages different types of bank accounts. Time to cash in your inheritance knowledge!
-
-#### **Project Goal:**
-
-Create a system that handles different types of bank accounts and performs basic operations.
-
-#### **Requirements:**
-
-* Create a base class called `BankAccount` with fields like `accountHolder`, `balance`, and methods like `deposit(amount)` and `withdraw(amount)`.
-* Create at least **two subclasses**:
-
-  * `SavingsAccount`: earns interest
-  * `CheckingAccount`: includes transaction fees
-* Each subclass should override the `withdraw()` method appropriately (e.g., charge a fee, or limit withdrawals).
-* Use constructors to set up accounts and call the superclass constructor.
-* In `main()`, create a **`List<BankAccount>`**, add a few accounts, and perform some deposits and withdrawals on each.
-* Use polymorphism to call `deposit()` and `withdraw()` on the list items.
-
-#### **Bonus:**
-
-Add a method to apply interest to `SavingsAccount` and a method to print an account summary for each account.
-
-🎯 *A classic example of OOP in action! This project brings all the key concepts together with a real-world theme.*
+🎯 *This project invites you to have fun with your imagination and practice powerful OOP concepts like inheritance, polymorphism, and classes. You’re not just writing code—you’re creating an enchanted universe that rocks!* 💥
 
 ---
 

@@ -8,7 +8,11 @@ public class App {
         SpreadsheetDocument document3 = new SpreadsheetDocument("progress", "xclx", "tables", owner, false);
 
         for(Document d : owner.getDocumentList()) {
-            System.out.println(d.getContent());
+            d.readContent();
+            if(d instanceof PdfDocument pdfDocument) {
+                System.out.println(pdfDocument.isLocked());
+            }
         }
-    }
+
+        System.out.println(owner);    }
 }

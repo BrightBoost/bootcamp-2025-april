@@ -15,4 +15,10 @@ public class SpreadsheetDocument extends Document {
     public void setSecretInformation(boolean secretInformation) {
         this.secretInformation = secretInformation;
     }
+
+    @Override
+    public void readContent() {
+        System.out.println("going through tables: ....");
+        System.out.println(getContent());
+    }
 }

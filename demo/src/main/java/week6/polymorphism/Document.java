@@ -48,4 +48,9 @@ public class Document {
     public void setOwner(Owner owner) {
         this.owner = owner;
     }
+
+    public void readContent() {
+        System.out.println("reading: ....");
+        System.out.println(getContent());
+    }
 }

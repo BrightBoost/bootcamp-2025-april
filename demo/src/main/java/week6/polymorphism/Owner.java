@@ -36,4 +36,12 @@ public class Owner {
     public void addDocumentToDocumentList(Document document) {
         documentList.add(document);
     }
+
+    @Override
+    public String toString() {
+        return "Owner{" +
+                "username='" + username + '\'' +
+                ", admin=" + admin +
+                '}';
+    }
 }
