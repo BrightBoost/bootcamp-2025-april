@@ -4,7 +4,7 @@ import week6.subpackage.LopRabbit;
 
 public class Main {
     public static void main(String[] args) {
-        Owl owl = new Owl();
+        Owl owl = new Owl(true);
         owl.setName("Hedwig");
         owl.fly();
         owl.eat();
