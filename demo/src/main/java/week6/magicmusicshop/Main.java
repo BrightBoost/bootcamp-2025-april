@@ -38,5 +38,9 @@ public class Main {
             i.use();
         }
 
+//        Performer p = new Performer(); // performer is abstract and therefore cannot be instantiated
+        // abstract classes can have abstract methods << for later
+        Performer p1 = new Magician();
+
     }
 }

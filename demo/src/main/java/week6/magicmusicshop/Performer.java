@@ -5,7 +5,7 @@ import java.util.List;
 
 // generic performer
 // generic because of the T
-public class Performer<T extends Item> {
+public abstract class Performer<T extends Item> {
     private List<T> items = new ArrayList<>();
 
     public List<T> getItems() {
