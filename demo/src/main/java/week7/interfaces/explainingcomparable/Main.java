@@ -24,8 +24,5 @@ public class Main {
         for(Document d : documentList) {
             System.out.println(d.getName());
         }
-
-
-
     }
 }
