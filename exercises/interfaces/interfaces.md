@@ -86,10 +86,6 @@ Write a method `Drawable getShape(String type)` that returns either a `Circle` o
 
 ---
 
-Yes! Below are **student-friendly instructions** for exercises 6–10 that **lead learners to implement the polymorphic solutions** you liked. Each includes clear requirements, constraints, and examples where helpful — without giving away the full solution.
-
----
-
 ### **Exercise 6: Feeding Time with Eaters**
 
 **Topic:** Interfaces and Polymorphism
