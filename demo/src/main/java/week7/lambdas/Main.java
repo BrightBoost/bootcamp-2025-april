@@ -41,5 +41,11 @@ public class Main {
 
         Provider provider = () -> LocalDate.now(); // nothing becomes current date
         System.out.println(provider.provide());
+
+        NumericOperator numericOperator = (a, b) -> a + b;
+        System.out.println(numericOperator.operate(4, 5));
+
+        CompareLogic compareLogic = (s1, s2) -> s1.length() - s2.length();
+        System.out.println(compareLogic.compare("hi", "hello"));
     }
 }

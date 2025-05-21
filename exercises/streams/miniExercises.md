@@ -5,7 +5,7 @@ Create a functional interface named `NumericOperator` that represents an operati
 Steps:
 - Create a functional interface named `NumericOperator`.
 - Define a method named `operate` that takes two int parameters and returns an int.
-- Annotate the class with the special annotation for functional interfaces.
+- Annotate the interface with the special annotation for functional interfaces.
 
 ## Exercise 2: Lambda Expression
 
@@ -60,11 +60,11 @@ Implement the `UnaryOperator` interface using a lambda expression to compute the
 
 ## Exercise 8: Functional Interface with Multiple Parameters
 
-Create a functional interface named `TriFunction` that represents a function taking three integers and returning an integer.
+Create a functional interface named `TriFunction` that represents a function taking three integers and returning a double.
 
 **Steps:**
 - Create a functional interface named `TriFunction`.
-- Define a method named `apply` that takes three `int` parameters and returns an `int`.
+- Define a method named `apply` that takes three `int` parameters and returns a `double`.
 - Annotate the interface with the appropriate annotation.
 
 
@@ -96,7 +96,7 @@ Implement the `Printer` interface using a lambda expression to print a string to
 - Use the lambda expression to print a string to the console.
 
 
-## Exercise 12: Functional Interface with Generic Type
+## Challenge: Exercise 12: Functional Interface with Generic Type
 
 Create a generic functional interface named `Predicate<T>` that tests an object of type `T`.
 
@@ -124,8 +124,8 @@ Write a method named `processStrings` that takes a `Predicate<String>` and a lis
 - Use the method to iterate over the list and print strings that satisfy the predicate.
 - In the `main` method, pass a lambda expression to `processStrings` that tests if a string starts with a specific letter.
 
-
-## CHALLENGE: Exercise 15: Using Built-in Functional Interfaces
+--- 
+## maybe not do this CHALLENGE yet: Exercise 15: Using Built-in Functional Interfaces
 
 Use the built-in `Consumer<Integer>` functional interface to print each element in a list of integers. Before using it, you can have a look at the implementation by ctrl + click on the Consumer word. (cmd + click for mac)
 
