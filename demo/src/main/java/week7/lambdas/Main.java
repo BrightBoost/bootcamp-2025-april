@@ -1,6 +1,7 @@
 package week7.lambdas;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
@@ -42,10 +43,55 @@ public class Main {
         Provider provider = () -> LocalDate.now(); // nothing becomes current date
         System.out.println(provider.provide());
 
+        // ex2
         NumericOperator numericOperator = (a, b) -> a + b;
         System.out.println(numericOperator.operate(4, 5));
 
         CompareLogic compareLogic = (s1, s2) -> s1.length() - s2.length();
         System.out.println(compareLogic.compare("hi", "hello"));
+
+        // ex3
+        NumericOperator numericOperator1 = (a, b) -> a > b ? a : b;
+        System.out.println(numericOperator1.operate(7, 8));
+
+        // ex5
+        StringFormatter stringFormatter = s -> s.toUpperCase();
+        System.out.println(stringFormatter.format("blablabla"));
+
+        // ex7
+        UnaryOperator unaryOperator = i -> i * i;
+        System.out.println(unaryOperator.apply(5));
+
+        // ex9
+        TriFunction triFunction = (x, y, z) -> (x + y + z) / 3.0;
+        System.out.println(triFunction.apply(2, 5, 7));
+
+        // ex11
+        Printer printer2 = s -> System.out.println(s);
+        printer2.print("hallo");
+
+        // ex 13
+        Predicate<String> predicate = s -> s.isEmpty();
+        System.out.println(predicate.test(""));
+        System.out.println(predicate.test("  "));
+
+        // ex14
+        List<String> list = new ArrayList<>();
+        list.add("Apple");
+        list.add("Banana");
+        list.add("Cherry");
+        list.add("Anything");
+        processStrings(s -> s.startsWith("A"), list);
+        System.out.println("***");
+        processStrings(s -> s.length() > 5, list);
+    }
+
+    // ex14
+    public static void processStrings(Predicate<String> predicate, List<String> strings) {
+        for(String string : strings) {
+            if(predicate.test(string)) {
+                System.out.println(string);
+            }
+        }
     }
 }
