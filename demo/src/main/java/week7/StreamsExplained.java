@@ -44,7 +44,7 @@ public class StreamsExplained {
         list.stream()
                 .map(s -> s.length())
                 .forEach(s -> System.out.println(s));
-        
+
         System.out.println("***");
         long count = list.stream() //stream start / source
                 .filter(s -> s.startsWith("A"))
