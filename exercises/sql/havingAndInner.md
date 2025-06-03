@@ -45,12 +45,12 @@ Group `Order Details` by `OrderID` and use `SUM(Quantity)` in the `HAVING`.
 
 ---
 
-6. **Find all customers whose average order quantity is less than 20.**
+<!-- 6. **Find all customers whose average order quantity is less than 20.**
 
 <details>
 <summary>💡 Hint</summary>
 Group `Order Details` by `OrderID`, join to `Orders`, then group by `CustomerID`.
-</details>
+</details> -->
 
 ---
 
