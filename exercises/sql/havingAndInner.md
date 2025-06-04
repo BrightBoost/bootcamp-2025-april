@@ -7,6 +7,7 @@
 Use `SUM(Quantity)` with `GROUP BY ProductID` and a `HAVING` clause.
 </details>
 
+
 ---
 
 2. **Which customers have placed more than 10 orders?**
