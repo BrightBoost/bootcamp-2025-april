@@ -1,0 +1,2 @@
+- Self paced learning using Pluralsight
+- Continuing on the workshop
