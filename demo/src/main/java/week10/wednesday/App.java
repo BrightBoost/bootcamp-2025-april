@@ -6,6 +6,7 @@ import java.util.List;
 
 public class App {
     private static NorthwindDataManager dataManager;
+
     public static void main(String[] args) {
         init(args);
         List<Product> products = dataManager.getAllProducts();
