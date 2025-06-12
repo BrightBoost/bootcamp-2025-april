@@ -2,12 +2,11 @@ package week10.wednesday.recap;
 
 import org.apache.commons.dbcp2.BasicDataSource;
 
-import javax.sql.DataSource;
 import java.util.List;
 import java.util.Scanner;
 
 public class App {
-    private static SakilaDataManager sakilaDataManager;
+    private static CategoryDAO categoryDAO;
     private static Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         init(args);
@@ -24,15 +23,15 @@ public class App {
 
         switch (response) {
             case "1":
-                printCategories(sakilaDataManager.getAllCategories());
+                printCategories(categoryDAO.getAll());
                 break;
             case "2":
                 System.out.println("What category are you looking for?");
-                printCategories(List.of(sakilaDataManager.getCategoryByName(scanner.nextLine())));
+                printCategories(List.of(categoryDAO.getCategoryByName(scanner.nextLine())));
                 break;
             case "3":
                 System.out.println("What id are you looking for?");
-                printCategories(List.of(sakilaDataManager.getCategoryById(Integer.parseInt(scanner.nextLine()))));
+                printCategories(List.of(categoryDAO.getCategoryById(Integer.parseInt(scanner.nextLine()))));
                 break;
             case "4":
                 System.out.println("Ok bye.");
@@ -57,6 +56,6 @@ public class App {
         dataSource.setPassword(args[1]);
         dataSource.setUrl("jdbc:mysql://localhost:3306/sakila");
 
-        sakilaDataManager = new SakilaDataManager(dataSource);
+        categoryDAO = new CategoryDAO(dataSource);
     }
 }

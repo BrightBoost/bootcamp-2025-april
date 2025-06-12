@@ -8,15 +8,15 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SakilaDataManager {
+public class CategoryDAO {
 
     private DataSource dataSource;
 
-    public SakilaDataManager(DataSource dataSource) {
+    public CategoryDAO(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 
-    public List<Category> getAllCategories() {
+    public List<Category> getAll() {
         List<Category> categories = new ArrayList<>();
         String query = "SELECT * FROM category";
 
