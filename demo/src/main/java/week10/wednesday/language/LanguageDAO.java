@@ -72,4 +72,47 @@ public class LanguageDAO {
         }
         return language;
     }
+
+    public void add(Language language) {
+        String query = "INSERT INTO language (name) values (?);";
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            preparedStatement.setString(1, language.getName());
+            int rowsAffected = preparedStatement.executeUpdate();
+            if(rowsAffected != 1) {
+                throw new SQLException("Insertion failed! " + language);
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void update(int idOfValueToBeUpdated, Language language) {
+        String query = "UPDATE language SET name = ? WHERE language_id = ?;";
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            preparedStatement.setString(1, language.getName());
+            preparedStatement.setInt(2, idOfValueToBeUpdated);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
+
+    public void delete(int idOfValueToDeleted) {
+        String query = "DELETE FROM language WHERE language_id = ?;";
+        try(
+                Connection connection = dataSource.getConnection();
+                PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            preparedStatement.setInt(1, idOfValueToDeleted);
+            preparedStatement.executeUpdate();
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+    }
 }

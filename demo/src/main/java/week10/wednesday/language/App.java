@@ -22,7 +22,10 @@ public class App {
         System.out.println("1) Get all languages");
         System.out.println("2) Get language by name");
         System.out.println("3) Get language by id");
-        System.out.println("4) Exit");
+        System.out.println("4) Add language");
+        System.out.println("5) Update language");
+        System.out.println("6) Delete language");
+        System.out.println("0) Exit");
 
         String choice = scanner.nextLine();
 
@@ -39,6 +42,25 @@ public class App {
                 printLanguages(List.of(languageDAO.getLanguageById(Integer.parseInt(scanner.nextLine()))));
                 break;
             case "4":
+                System.out.println("What language do you want to add?");
+                Language language = new Language();
+                language.setName(scanner.nextLine());
+                languageDAO.add(language);
+                break;
+            case "5":
+                System.out.println("What is the id you want to update?");
+                int id = Integer.parseInt(scanner.nextLine());
+                System.out.println("What language do you want to change it to?");
+                language = new Language();
+                language.setName(scanner.nextLine());
+                languageDAO.update(id, language);
+                break;
+            case "6":
+                System.out.println("What is the id you want to delete?");
+                int idTobeDeleted = Integer.parseInt(scanner.nextLine());
+                languageDAO.delete(idTobeDeleted);
+                break;
+            case "0":
                 return false;
         }
         return true;
