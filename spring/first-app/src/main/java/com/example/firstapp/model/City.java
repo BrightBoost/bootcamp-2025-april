@@ -1,27 +1,27 @@
 package com.example.firstapp.model;
 
 public class City {
-    private String name;
-    private String country;
+    private String city;
+    private int countryId;
 
-    public City(String name, String country) {
-        this.name = name;
-        this.country = country;
+    public City(String name, int country) {
+        this.city = name;
+        this.countryId = country;
     }
 
-    public String getName() {
-        return name;
+    public String getCity() {
+        return city;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setCity(String city) {
+        this.city = city;
     }
 
-    public String getCountry() {
-        return country;
+    public int getCountryId() {
+        return countryId;
     }
 
-    public void setCountry(String country) {
-        this.country = country;
+    public void setCountryId(int countryId) {
+        this.countryId = countryId;
     }
 }
