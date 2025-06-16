@@ -2,6 +2,7 @@ package com.example.firstapp.dao;
 
 import com.example.firstapp.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -11,6 +12,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
+@Component
 public class CityDao {
     private DataSource dataSource;
 
@@ -19,7 +21,6 @@ public class CityDao {
         this.dataSource = dataSource;
     }
 
-    // get all cities
     public List<City> getAllCities() {
         String query = "SELECT * FROM city";
         List<City> cities = new ArrayList<>();
