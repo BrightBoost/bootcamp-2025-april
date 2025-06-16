@@ -16,11 +16,16 @@ public class LanguageDAO {
     }
 
     public List<Language> getAll() {
+        // This is the query that I will run on the db later
         String query = "SELECT language_id, name FROM language;";
+        // This is the list that I'll filling with all the records (rows) from the db
         List<Language> languages = new ArrayList<>();
         try (
+                // making a connection to sakila
                 Connection connection = dataSource.getConnection();
+                // Getting the query ready to run
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
+                // run the query and save results in resultset
                 ResultSet resultSet = preparedStatement.executeQuery();
         ) {
             while (resultSet.next()) {
@@ -74,7 +79,7 @@ public class LanguageDAO {
     }
 
     public void add(Language language) {
-        String query = "INSERT INTO language (name) values (?);";
+        String query = "INSERT INTO language (name) VALUES (?);";
         try(
                 Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query);
