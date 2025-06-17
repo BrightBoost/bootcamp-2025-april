@@ -19,4 +19,5 @@ public class DatabaseConfiguration {
         dataSource.setPassword(password);
         return dataSource;
     }
+
 }

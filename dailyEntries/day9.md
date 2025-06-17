@@ -6,7 +6,8 @@ today:
 tomorrow:
 - maaike demos exercise 2
 - examine API calls + JSON
-- delete and update requests
+- another exercise
+- delete and update requests + more exercises
 
 wednesday:
 - dependency injection and beans a little 
