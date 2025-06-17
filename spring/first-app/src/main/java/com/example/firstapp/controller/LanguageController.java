@@ -31,4 +31,24 @@ public class LanguageController {
         return languageDao.addLanguage(language);
     }
 
+    @PutMapping("language/{id}")
+    public String updateLanguage(@PathVariable int id, @RequestBody Language language) {
+        boolean success = languageDao.updateLanguage(id, language);
+        if (success) {
+            return "Language updated successfully.";
+        } else {
+            return "Language not found or update failed.";
+        }
+    }
+
+    @DeleteMapping("language/{id}")
+    public String deleteLanguage(@PathVariable int id) {
+        boolean success = languageDao.deleteLanguage(id);
+        if (success) {
+            return "Language deleted.";
+        } else {
+            return "Language not found or deleted.";
+        }
+    }
+
 }

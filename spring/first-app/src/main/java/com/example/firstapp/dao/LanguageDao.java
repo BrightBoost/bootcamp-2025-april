@@ -72,5 +72,42 @@ public class LanguageDao {
         return language;
     }
 
+    public boolean updateLanguage(int id, Language language) {
+        String query = "UPDATE language SET name = ? WHERE language_id = ?";
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+            preparedStatement.setString(1, language.getName());
+            preparedStatement.setInt(2, id);
+
+            int affectedRows = preparedStatement.executeUpdate();
+            return affectedRows > 0;
+
+        } catch (SQLException e) {
+            System.out.println("Oh dear (update): " + e.getMessage());
+            return false;
+        }
+    }
+
+    public boolean deleteLanguage(int id) {
+        String query = "DELETE FROM language WHERE language_id = ?";
+        try (Connection connection = dataSource.getConnection();
+             PreparedStatement preparedStatement = connection.prepareStatement(query)) {
+
+            preparedStatement.setInt(1, id);
+
+            int affectedRows = preparedStatement.executeUpdate();
+            return affectedRows > 0;
+
+        } catch (SQLException e) {
+            System.out.println("Oh dear (delete): " + e.getMessage());
+            return false;
+        }
+    }
+
+
+
+
+
 
 }
