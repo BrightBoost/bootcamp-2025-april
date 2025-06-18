@@ -50,7 +50,7 @@ Create **two classes** in a new package called `ingredients`:
 Each should:
 
 * Be marked with `@Component`
-* Implement an `Ingredient` interface (already provided)
+* Implement an `Ingredient` interface
 * Return a fun string when `describe()` is called, e.g., `"Glowing green beans"` or `"A pinch of dragon salt"`
 
 These are your auto-wired beans! But don’t forget…
@@ -59,7 +59,7 @@ These are your auto-wired beans! But don’t forget…
 
 ## 🧂 Step 3: Autowire the Ingredients
 
-In `SoupMaker.java`, you’ll see a placeholder. Inject all available `Ingredient` beans using **constructor injection**.
+In `SoupMaker.java` inject all available `Ingredient` beans using **constructor injection**. (Give the constructor an ingredient array as parameter)
 
 When `makeSoup()` is called, it should:
 
