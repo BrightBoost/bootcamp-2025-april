@@ -19,6 +19,7 @@ public class CustomerDao {
         this.dataSource = dataSource;
     }
 
+
     public List<Customer> getAllCustomers() {
         String query = "SELECT * FROM customer";
         List<Customer> customers = new ArrayList<>();
