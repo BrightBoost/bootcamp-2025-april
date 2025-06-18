@@ -32,6 +32,9 @@ public class FirstAppApplication {
 //		for(String beanName : ac.getBeanDefinitionNames()) {
 //			System.out.println(beanName);
 //		}
+
+		Example example = ac.getBean(Example.class);
+		System.out.println(example.getTest());
 	}
 
 }
