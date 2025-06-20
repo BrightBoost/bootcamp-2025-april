@@ -36,4 +36,22 @@ public class CityDao {
         }
         return  cities;
     }
+
+    public List<City> getAllCitiesContaining(String searchText) {
+        String query = "SELECT * FROM city WHERE city LIKE ?";
+        List<City> cities = new ArrayList<>();
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            preparedStatement.setString(1, "%" + searchText + "%");
+            try(ResultSet resultSet = preparedStatement.executeQuery()) {
+                while (resultSet.next()) {
+                    cities.add(new City(resultSet.getString("city"), resultSet.getInt("country_id")));
+                }
+            }
+        } catch (SQLException e) {
+            System.out.println(e.getMessage());
+        }
+        return  cities;
+    }
 }

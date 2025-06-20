@@ -37,6 +37,26 @@ public class CustomerDao {
         return customers;
     }
 
+    public List<Customer> getAllCustomersByFirstName(String firstName) {
+        String query = "SELECT * FROM customer WHERE first_name = ?";
+        List<Customer> customers = new ArrayList<>();
+        try(Connection connection = dataSource.getConnection();
+            PreparedStatement preparedStatement = connection.prepareStatement(query);
+        ) {
+            preparedStatement.setString(1, firstName);
+            try(ResultSet resultSet = preparedStatement.executeQuery()
+            ) {
+                while (resultSet.next()) {
+                    Customer customer = new Customer(resultSet.getInt("customer_id"), resultSet.getInt("store_id"), resultSet.getString("first_name"), resultSet.getString("last_name"), resultSet.getString("email"), resultSet.getInt("address_id"), resultSet.getBoolean("active"));
+                    customers.add(customer);
+                }
+            }
+        } catch(SQLException e) {
+            System.out.println("Oh dear: " + e.getMessage());
+        }
+        return customers;
+    }
+
     public Customer getCustomerById(int id) {
         String query = "SELECT * FROM customer WHERE customer_id = ?";
         Customer customer = null;

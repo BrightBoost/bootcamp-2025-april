@@ -22,6 +22,11 @@ public class CustomerController {
         return customerDao.getAllCustomers();
     }
 
+    @GetMapping("customerByFirstName")
+    public List<Customer> getCustomersByFirstName(@RequestParam String name){
+        return customerDao.getAllCustomersByFirstName(name);
+    }
+
     @GetMapping("customer/{id}")
     public Customer getCustomerById(@PathVariable int id) {
         return customerDao.getCustomerById(id);

@@ -6,6 +6,7 @@ import com.example.firstapp.model.City;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.List;
@@ -32,7 +33,13 @@ public class CityController {
     }
 
     @GetMapping("cities")
-    public List<City> getCities() {
-        return cityDao.getAllCities();
+    public List<City> getCities(@RequestParam(required = false) String search) {
+        if(search != null) {
+            return cityDao.getAllCitiesContaining(search);
+        } else {
+            return cityDao.getAllCities();
+        }
     }
+
+
 }
